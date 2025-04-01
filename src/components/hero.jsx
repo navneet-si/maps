@@ -41,7 +41,7 @@ export function Hero(){
 
             </div>
             <div className='h-[500px] w-[600px] flex items-center'>
-            <MapContainer center={center} zoom={ZOOM_LEVEL} scrollWheelZoom={false} className='w-[500px]  h-[500px]'>
+            <MapContainer center={center} zoom={ZOOM_LEVEL} scrollWheelZoom={false} className='w-[400px]  h-[400px]'>
                
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

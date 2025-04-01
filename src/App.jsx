@@ -11,14 +11,14 @@ function App() {
 
 
   return (
-    <>
+    <div className="overflow-y-auto">
     <Navbar/>
     <Hero/>
     <Features/>
     <Benefits/>
     <Feed/>
     <Footer/>
-    </>
+    </div>
   )
 }
 

@@ -26,7 +26,7 @@ export function Feed() {
 
   return (
     <div className="mb-4 mt-5">
-    <h4 className="text-teal-950 font-bold text-3xl flex justify-center mb-4"><u>Feed Back From Our User's</u></h4>
+    <h4 className="text-teal-950 font-bold text-3xl flex justify-center mb-4"><u>Feedback From Our User's</u></h4>
     <div className="relative w-full flex flex-col items-center">
       <div className="flex flex-col md:flex-row items-center justify-center w-3/4 bg-white shadow-lg rounded-lg p-6">
         {/* Image Section */}
