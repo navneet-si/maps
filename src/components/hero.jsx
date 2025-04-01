@@ -3,11 +3,12 @@ import { useState } from 'react';
 import { MapContainer, TileLayer, useMap ,Marker,Popup} from 'react-leaflet';
 import "../index.css";
 import "leaflet/dist/leaflet.css"
+import mapimg from "../assets/mapimg.jpg"
 
 export function Hero(){
    
-   const [center,setCenter]=useState({lat: 13.084622,lng: 80.248357});
-   const ZOOM_LEVEL=9;
+   const [center,setCenter]=useState({lat:21.0000,lng:  78.0000});
+   const ZOOM_LEVEL=4;
    
     return ( 
         <div className="relative h-screen w-screen">
@@ -39,18 +40,23 @@ export function Hero(){
             </div>
 
             </div>
-            <div className='shadow-md'>
+            <div className='h-[500px] w-[600px] flex items-center'>
             <MapContainer center={center} zoom={ZOOM_LEVEL} scrollWheelZoom={false} className='w-[500px]  h-[500px]'>
+               
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    
                 />
                 <Marker position={center}>
                     <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
+                   HI,Welcome To Simpler
                     </Popup>
                 </Marker>
             </MapContainer>
+
+                {/* <img src={mapimg} alt="" class="h-[350px] w-[600px] object-fit rounded-lg"/> */}
+
             </div>
         </div>
         </div>  
