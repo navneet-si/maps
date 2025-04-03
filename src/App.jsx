@@ -1,24 +1,31 @@
-
-import { Hero } from "./components/hero"
-import { Navbar } from "./components/navbar"
-import {Card} from "./components/card";
-import { Feed } from "./components/feed";
-import { Features } from "./components/features";
-import { Benefits } from "./components/benefits";
-import { Footer } from "./components/footer";
-
+import Home from "./pages/home"
+import {BrowserRouter,Route,Routes,Link} from "react-router-dom"
+import About from "./pages/about"
+import { Footer } from "./comp/footer";
+import { Navbar } from "./comp/navbar"
 function App() {
 
 
   return (
-    <div className="overflow-y-auto">
+   <>
+   <BrowserRouter>
     <Navbar/>
-    <Hero/>
-    <Features/>
-    <Benefits/>
-    <Feed/>
+    <Routes>
+        <Route path="/" element={<Home/>}/> 
+        <Route path="/about" element={<About/>}/>
+        <Route
+          path="/services"
+          element={() => {
+            window.location.href = "/route.html";
+            return null;
+          }}
+        />
+
+    </Routes>
     <Footer/>
-    </div>
+   </BrowserRouter>
+
+   </>
   )
 }
 
