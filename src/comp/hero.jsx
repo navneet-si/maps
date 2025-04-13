@@ -25,7 +25,7 @@ export function Hero(){
             <div className= 'text-white md:text-8xl font-[Anchorage] text-4xl '>
 
             <h1 className='md:-translate-y-6'>
-                Planning a <span className='text-red-600 font-[Pacifico]'>Trip</span> we <br></br>Got You
+                Geo   <span className='text-red-600 font-[Pacifico]'>Maps</span>|  
             </h1>
             <p className='md:text-xl text-sm'>
             "Discover a new way to navigate your world, where every move is simpler, faster, and stress-free.<br></br>Whether you're relocating, planning a trip, or mapping out your next adventure,<br></br> our geo-reference platform brings precision and ease to the forefront"

@@ -108,9 +108,9 @@ export function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/services" className={`block py-2 px-3 rounded-sm ${getLinkClass("/services")}`} aria-current={location.pathname === "/services" ? "page" : undefined}>
+                <a href="/route.html" className={`block py-2 px-3 rounded-sm ${getLinkClass("/services")}`} aria-current={location.pathname === "/services" ? "page" : undefined}>
                   Services
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

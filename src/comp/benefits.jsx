@@ -1,7 +1,7 @@
 import think from "../assets/think.webm"
 export function Benefits(){
     return(
-        <div className="shadow-2xl w-[90%] m-auto pb-[40px] -translate-y-20">
+        <div className="shadow-2xl w-[90%] m-auto pb-[40px] -translate-y-20 ">
             <h4 className="text-4xl font-bold flex justify-center my-2 text-teal-950">
                 <u>Why Us ?</u>
             </h4>

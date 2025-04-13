@@ -13,14 +13,6 @@ function App() {
     <Routes>
         <Route path="/" element={<Home/>}/> 
         <Route path="/about" element={<About/>}/>
-        <Route
-          path="/services"
-          element={() => {
-            window.location.href = "/route.html";
-            return null;
-          }}
-        />
-
     </Routes>
     <Footer/>
    </BrowserRouter>
